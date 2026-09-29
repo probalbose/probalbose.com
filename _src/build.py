@@ -61,7 +61,7 @@ def render(meta, body):
             "jobTitle": "Principal Site Reliability Engineer",
             "affiliation": {"@type": "CollegeOrUniversity", "name": "University College Dublin"},
             "homeLocation": {"@type": "Place", "name": "Dublin, Ireland"},
-            "sameAs": same_as + ["https://www.amazon.com/dp/B0HLDSG5Z5"],
+            "sameAs": same_as + [u for u in [CFG.get("amazon_author")] if u],
         }, ensure_ascii=False, indent=1)
     body = (body.replace("{{portrait}}", portrait())
                 .replace("{{social}}", social_links())
