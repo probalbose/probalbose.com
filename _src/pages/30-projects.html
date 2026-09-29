@@ -1,0 +1,34 @@
+<!--{"path": "projects/", "nav": "projects", "title": "Projects", "description": "Projects by Probal Bose: an open research data pipeline for cryptocurrency order books, a compression format for order book data, and the build system behind Reading the Greek."}-->
+
+  <section class="hero page-hero">
+    <div class="wrap narrow">
+      <p class="eyebrow">Projects</p>
+      <h1>Things I've built</h1>
+      <p class="lede">Tools that grew out of my research and writing. Some are being prepared for public release, and I'll link each one here when it's out.</p>
+    </div>
+  </section>
+
+  <section class="band" aria-label="Projects">
+    <div class="wrap">
+      <div class="projects">
+        <article class="project">
+          <div class="p-head"><span class="icon" style="background:var(--stats-chip);color:var(--stats-text)">δ</span>
+            <div><h2>Order book research pipeline</h2><p class="status soon">Public release in preparation</p></div></div>
+          <p>A pipeline for research-grade cryptocurrency market data. It streams live order book and trade data from 13 Binance trading pairs into Kafka and TimescaleDB, rebuilds the full order book, and runs a gap-aware validity framework that separates recoverable gaps from ones that can never be filled.</p>
+          <p class="tags"><span>Python</span><span>Kafka</span><span>TimescaleDB</span><span>WebSockets</span><span>Market microstructure</span></p>
+        </article>
+        <article class="project">
+          <div class="p-head"><span class="icon" style="background:var(--maths-chip);color:var(--maths-text)">ζ</span>
+            <div><h2>jsonlz</h2><p class="status soon">Release to be announced</p></div></div>
+          <p>A compression format for JSON Lines order book data. It uses delta encoding designed for order books and adaptive arithmetic coding, with a CRC32 check on every block. On BTCUSDT order book data it compresses about 16 times, against about 8 times for gzip at its highest setting.</p>
+          <p class="tags"><span>Compression</span><span>Arithmetic coding</span><span>File formats</span></p>
+        </article>
+        <article class="project">
+          <div class="p-head"><span class="icon" style="background:var(--finance-chip);color:var(--finance-text)">β</span>
+            <div><h2>The book build system</h2><p class="status">Behind <a href="/books/reading-the-greek/"><i>Reading the Greek</i></a></p></div></div>
+          <p>One source for 2 editions. Quarto and XeLaTeX produce the print interior with bleed and thumb tabs, and a custom EPUB pipeline produces the Kindle edition. Every diagram is drawn in Python and checked by an automated layout audit, and every code listing is run and compared with the output printed in the book.</p>
+          <p class="tags"><span>Quarto</span><span>LaTeX</span><span>EPUB</span><span>Matplotlib</span><span>Lua filters</span></p>
+        </article>
+      </div>
+    </div>
+  </section>

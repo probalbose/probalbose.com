@@ -1,0 +1,62 @@
+<!--{"path": "research/", "nav": "research", "title": "Research", "description": "Probal Bose's PhD research at University College Dublin on cryptocurrency limit order book microstructure, using Hawkes processes, information theory and echo state networks."}-->
+
+  <section class="hero page-hero">
+    <div class="wrap narrow">
+      <p class="eyebrow">Research</p>
+      <h1>How markets move, one order at a time</h1>
+      <p class="lede">I'm a PhD researcher at University College Dublin, cross-registered in Computer Science and Financial Mathematics. My work studies the microstructure of cryptocurrency limit order books, the finest level at which prices form.</p>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="question-title">
+    <div class="wrap narrow">
+      <p class="eyebrow">The question</p>
+      <h2 id="question-title">What happens inside the order book?</h2>
+      <p>Every trade on an exchange comes from a queue of buy and sell orders called the limit order book. Orders arrive, cancel and fill thousands of times a second, and they don't arrive independently. One order makes the next more likely, activity in one asset spills into another, and liquidity can vanish in moments.</p>
+      <p>Cryptocurrency markets are an unusually open window on this. They trade around the clock and publish their full order books live, so the whole process can be recorded and studied in detail.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="methods-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Methods</p>
+        <h2 id="methods-title">3 tools from 3 fields</h2>
+      </div>
+      <div class="cards three">
+        <div class="card">
+          <div class="icon" style="background:var(--stats-chip);color:var(--stats-text)">λ</div>
+          <h3>Hawkes processes</h3>
+          <p>Self-exciting point processes, where each event raises the chance of the next. They measure how much of the market's activity is a reaction to its own recent past.</p>
+        </div>
+        <div class="card">
+          <div class="icon" style="background:var(--physics-chip);color:var(--physics-text)">H</div>
+          <h3>Information theory</h3>
+          <p>Entropy, mutual information and transfer entropy, to measure how much one stream of orders tells us about another, and in which direction information flows.</p>
+        </div>
+        <div class="card">
+          <div class="icon" style="background:var(--maths-chip);color:var(--maths-text)">ρ</div>
+          <h3>Echo state networks</h3>
+          <p>Reservoir computing, a fast and lightweight kind of recurrent neural network, for learning and forecasting the dynamics of order flow across assets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="data-title">
+    <div class="wrap narrow">
+      <p class="eyebrow">Data</p>
+      <h2 id="data-title">Research-grade market data, built from scratch</h2>
+      <p>Good microstructure research needs data you can trust, so I built the pipeline that collects it. It records live order book and trade streams from 13 Binance trading pairs, rebuilds the full order book from those updates, and checks every stretch of data before it's used.</p>
+      <p>The heart of it is a gap-aware validity framework. Some missing data can be recovered afterwards, such as trades, which the exchange can replay. Missing order book updates can't be, and the framework treats them that way, so a rebuilt book is either provably complete or clearly marked as unusable.</p>
+      <p>I'm preparing a public release of the infrastructure and method layer. See <a href="/projects/">Projects</a>.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="pubs-title">
+    <div class="wrap narrow">
+      <p class="eyebrow">Publications</p>
+      <h2 id="pubs-title">Papers</h2>
+      <p>Papers from this work are in preparation and will be listed here as they appear.</p>
+    </div>
+  </section>

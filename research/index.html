@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · Probal Bose</title>
+<meta name="description" content="Probal Bose&#x27;s PhD research at University College Dublin on cryptocurrency limit order book microstructure, using Hawkes processes, information theory and echo state networks.">
+<link rel="canonical" href="https://probalbose.com/research/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Research · Probal Bose">
+<meta property="og:description" content="Probal Bose&#x27;s PhD research at University College Dublin on cryptocurrency limit order book microstructure, using Hawkes processes, information theory and echo state networks.">
+<meta property="og:url" content="https://probalbose.com/research/">
+<meta property="og:image" content="https://probalbose.com/assets/img/social-card-home.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FAF9F6">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/FiraSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Probal Bose, home"><span class="mark" aria-hidden="true">π</span><span class="name">Probal Bose</span></a>
+    <nav class="nav" aria-label="Main"><a href="/research/" aria-current="page">Research</a><a href="/engineering/">Engineering</a><a href="/projects/">Projects</a><a href="/books/">Books</a></nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero page-hero">
+    <div class="wrap narrow">
+      <p class="eyebrow">Research</p>
+      <h1>How markets move, one order at a time</h1>
+      <p class="lede">I'm a PhD researcher at University College Dublin, cross-registered in Computer Science and Financial Mathematics. My work studies the microstructure of cryptocurrency limit order books, the finest level at which prices form.</p>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="question-title">
+    <div class="wrap narrow">
+      <p class="eyebrow">The question</p>
+      <h2 id="question-title">What happens inside the order book?</h2>
+      <p>Every trade on an exchange comes from a queue of buy and sell orders called the limit order book. Orders arrive, cancel and fill thousands of times a second, and they don't arrive independently. One order makes the next more likely, activity in one asset spills into another, and liquidity can vanish in moments.</p>
+      <p>Cryptocurrency markets are an unusually open window on this. They trade around the clock and publish their full order books live, so the whole process can be recorded and studied in detail.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="methods-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Methods</p>
+        <h2 id="methods-title">3 tools from 3 fields</h2>
+      </div>
+      <div class="cards three">
+        <div class="card">
+          <div class="icon" style="background:var(--stats-chip);color:var(--stats-text)">λ</div>
+          <h3>Hawkes processes</h3>
+          <p>Self-exciting point processes, where each event raises the chance of the next. They measure how much of the market's activity is a reaction to its own recent past.</p>
+        </div>
+        <div class="card">
+          <div class="icon" style="background:var(--physics-chip);color:var(--physics-text)">H</div>
+          <h3>Information theory</h3>
+          <p>Entropy, mutual information and transfer entropy, to measure how much one stream of orders tells us about another, and in which direction information flows.</p>
+        </div>
+        <div class="card">
+          <div class="icon" style="background:var(--maths-chip);color:var(--maths-text)">ρ</div>
+          <h3>Echo state networks</h3>
+          <p>Reservoir computing, a fast and lightweight kind of recurrent neural network, for learning and forecasting the dynamics of order flow across assets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="data-title">
+    <div class="wrap narrow">
+      <p class="eyebrow">Data</p>
+      <h2 id="data-title">Research-grade market data, built from scratch</h2>
+      <p>Good microstructure research needs data you can trust, so I built the pipeline that collects it. It records live order book and trade streams from 13 Binance trading pairs, rebuilds the full order book from those updates, and checks every stretch of data before it's used.</p>
+      <p>The heart of it is a gap-aware validity framework. Some missing data can be recovered afterwards, such as trades, which the exchange can replay. Missing order book updates can't be, and the framework treats them that way, so a rebuilt book is either provably complete or clearly marked as unusable.</p>
+      <p>I'm preparing a public release of the infrastructure and method layer. See <a href="/projects/">Projects</a>.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="pubs-title">
+    <div class="wrap narrow">
+      <p class="eyebrow">Publications</p>
+      <h2 id="pubs-title">Papers</h2>
+      <p>Papers from this work are in preparation and will be listed here as they appear.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Probal Bose · Dublin, Ireland</span>
+    <span class="foot-links"><a href="/research/">Research</a> · <a href="/engineering/">Engineering</a> · <a href="/projects/">Projects</a> · <a href="/books/">Books</a><span class="social foot-social"><a href="https://www.linkedin.com/in/probal-bose-principal-site-reliability-engineer" rel="me noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a><a href="https://github.com/probalbose" rel="me noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></svg><span>GitHub</span></a></span></span>
+  </div>
+</footer>
+
+<script src="/assets/js/letters.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
